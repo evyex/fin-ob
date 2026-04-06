@@ -1,0 +1,20 @@
+{
+    "name": "evgen/fin-ob",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Evgen\\FinOb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Evgen Yurchenko",
+            "email": "evgenijvy@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2"
+    }
+}
