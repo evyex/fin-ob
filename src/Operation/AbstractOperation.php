@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Evgen\FinOb\Operation;
+namespace EvgenijVY\FinOb\Operation;
 
-use Evgen\FinOb\AbstractNumber;
-use Evgen\FinOb\Number;
+use EvgenijVY\FinOb\AbstractNumber;
+use EvgenijVY\FinOb\Number;
 
 abstract class AbstractOperation
 {

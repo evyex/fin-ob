@@ -1,15 +1,15 @@
 {
-    "name": "evgen/fin-ob",
+    "name": "evgeni-jvy/fin-ob",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Evgen\\FinOb\\": "src/"
+            "EvgenijVY\\FinOb\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Evgen Yurchenko",
+            "name": "Evgenij Yurchenko",
             "email": "evgenijvy@gmail.com"
         }
     ],

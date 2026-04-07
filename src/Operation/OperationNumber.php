@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Evgen\FinOb\Operation;
+namespace EvgenijVY\FinOb\Operation;
 
-use Evgen\FinOb\Number;
+use EvgenijVY\FinOb\Number;
 
 /**
  * @internal
