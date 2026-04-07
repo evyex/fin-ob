@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Evgen\FinOb;
+namespace EvgenijVY\FinOb;
 
 class Number extends AbstractNumber
 {

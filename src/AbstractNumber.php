@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Evgen\FinOb;
+namespace EvgenijVY\FinOb;
 
-use Evgen\FinOb\Operation\AddOperation;
-use Evgen\FinOb\Operation\DivOperation;
-use Evgen\FinOb\Operation\MulOperation;
-use Evgen\FinOb\Operation\SubOperation;
+use EvgenijVY\FinOb\Operation\AddOperation;
+use EvgenijVY\FinOb\Operation\DivOperation;
+use EvgenijVY\FinOb\Operation\MulOperation;
+use EvgenijVY\FinOb\Operation\SubOperation;
 
 abstract class AbstractNumber
 {
