@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace EvgenijVY\FinOb\Operation;
+namespace EvgenijVY\FinOb\Internal;
 
 use EvgenijVY\FinOb\Number;
 
 /**
  * @internal
  */
-final class OperationNumber extends Number
+final class InternalNumber extends Number
 {
     public function __construct(int $data, int $precision = 2)
     {

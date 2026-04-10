@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace EvgenijVY\FinOb\Operation;
 
+use EvgenijVY\FinOb\Internal\InternalNumber;
 use EvgenijVY\FinOb\Number;
 
 class DivOperation extends AbstractOperation
 {
-    protected function execution(OperationNumber $a, OperationNumber $b, int $precision): Number
+    protected function execution(InternalNumber $a, InternalNumber $b, int $precision): Number
     {
         if ($b->getData() === 0) {
             throw new \DivisionByZeroError('Division by zero');
@@ -16,6 +17,6 @@ class DivOperation extends AbstractOperation
 
         $scale = 10 ** $precision;
 
-        return new OperationNumber((int) round($a->getData() * $scale / $b->getData(), $precision) , $precision);
+        return new InternalNumber((int) round($a->getData() * $scale / $b->getData(), $precision) , $precision);
     }
 }

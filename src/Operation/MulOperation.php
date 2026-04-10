@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 namespace EvgenijVY\FinOb\Operation;
 
+use EvgenijVY\FinOb\Internal\InternalNumber;
 use EvgenijVY\FinOb\Number;
 
 class MulOperation extends AbstractOperation
 {
-    protected function execution(OperationNumber $a, OperationNumber $b, int $precision): Number
+    protected function execution(InternalNumber $a, InternalNumber $b, int $precision): Number
     {
-        return new OperationNumber((int) round($a->getData() * $b->getData()), $a->getPrecision() + $b->getPrecision());
+        return new InternalNumber((int) round($a->getData() * $b->getData()), $a->getPrecision() + $b->getPrecision());
     }
 }

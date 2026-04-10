@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace EvgenijVY\FinOb;
+namespace EvgenijVY\FinOb\Internal;
 
 use EvgenijVY\FinOb\Operation\AddOperation;
 use EvgenijVY\FinOb\Operation\DivOperation;
@@ -11,11 +11,6 @@ use EvgenijVY\FinOb\Operation\SubOperation;
 
 abstract class AbstractNumber
 {
-    protected const OP_ADD = 'add';
-    protected const OP_SUB = 'sub';
-    protected const OP_MUL = 'mul';
-    protected const OP_DIV = 'div';
-
     protected int $data;
     protected int $precision;
 
@@ -25,9 +20,7 @@ abstract class AbstractNumber
             throw new \InvalidArgumentException('Number must be numeric');
         }
 
-        if ($precision > 9) {
-            throw new \InvalidArgumentException('Precision must be less than 9');
-        }
+        PrecisionChecker::checkPrecision($precision);
 
         $this->precision = $precision;
         $this->data = (int) round((float) $number * $this->scale($this->precision));

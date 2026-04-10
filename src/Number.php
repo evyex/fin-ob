@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace EvgenijVY\FinOb;
 
+use EvgenijVY\FinOb\Internal\AbstractNumber;
+
 class Number extends AbstractNumber
 {
     // Mutators
